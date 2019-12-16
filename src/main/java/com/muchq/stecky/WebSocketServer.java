@@ -72,9 +72,9 @@ public class WebSocketServer {
 
     public Builder addModules(Module... modules) {
       this.modules = ImmutableSet.<Module>builder()
-              .addAll(ImmutableSet.copyOf(modules))
-              .add(new WebSocketModule())
-              .build();
+          .addAll(ImmutableSet.copyOf(modules))
+          .add(new WebSocketModule())
+          .build();
       return this;
     }
 
